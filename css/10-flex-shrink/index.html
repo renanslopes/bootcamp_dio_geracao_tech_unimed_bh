@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Fundamentos CSS - Flex-shrink</title>
+    <style>
+        .flex-container {
+            max-width: 350px;
+            border: 2px solid black;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            background-color: cadetblue;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .s-1 {
+            flex-shrink: 1;
+        }
+
+        .s-0 {
+            flex-shrink: 0;
+        }
+
+        .fg-1 {
+            flex-grow: 1
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Flex-shrink: 1</h2>
+    <section class="flex-container">
+        <div class="item s-1 fg-1">Lo</div>
+        <div class="item s-1 fg-1">Nu</div>
+        <div class="item s-1 fg-1">Nu</div>
+        <div class="item s-1 fg-1">Mo</div>
+        <div class="item s-1 fg-1">Sr</div>
+    </section>
+    <h2>Flex-shrink: 1</h2>
+    <section class="flex-container">
+        <div class="item s-1 fg-1">Lo</div>
+        <div class="item s-1 fg-1">NuNuNuNuNuNu</div>
+        <div class="item s-1 fg-1">Nu</div>
+        <div class="item s-1 fg-1">Mo</div>
+        <div class="item s-1 fg-1">Sr</div>
+    </section>
+    <h2>Flex-shrink: 0</h2>
+    <section class="flex-container">
+        <div class="item s-0 fg-1">Lo</div>
+        <div class="item s-0 fg-1">NuNuNuNuNuNu</div>
+        <div class="item s-0 fg-1">Nu</div>
+        <div class="item s-0 fg-1">Mo</div>
+        <div class="item s-0 fg-1">Sr</div>
+    </section>
+
+</body>
+
+</html>

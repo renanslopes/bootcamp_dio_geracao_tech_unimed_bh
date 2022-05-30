@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Fundamentos CSS - Align Self</title>
+    <style>
+        .flex-container {
+            max-width: 400px;
+            border: 2px solid black;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .align-container {
+            align-items: center;
+        }
+
+        .item {
+            background-color: cornflowerblue;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .start {
+            align-self: flex-start;
+        }
+
+        .end {
+            align-self: flex-end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ALign Self</h2>
+    <section class="flex-container align-container">
+        <div class="item auto">Lo</div>
+        <div class="item auto">Nu</div>
+        <div class="item auto">NuNuNuNuNuNuNuNuNuNuNuNuNu</div>
+        <div class="item auto">Mo</div>
+        <div class="item auto">Sr</div>
+    </section>
+    <h2>ALign Self</h2>
+    <section class="flex-container">
+        <div class="item auto">Lo</div>
+        <div class="item auto">Nu</div>
+        <div class="item auto">NuNuNuNuNuNuNuNuNuNuNuNuNu</div>
+        <div class="item auto">Mo</div>
+        <div class="item end">Sr</div>
+    </section>
+
+
+
+
+</body>
+
+</html>

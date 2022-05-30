@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Fundamentos CSS - Align Items</title>
+    <style>
+        .container {
+            max-width: 400px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item {
+            min-width: 50px;
+            /* height: 40px; */
+            background-color: aqua;
+            margin: 5px;
+            text-align: center;
+            color: brown;
+            /* font-size: 16px; */
+            flex: 1;
+        }
+
+        .flex {
+            flex: 1;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .start {
+            align-items: flex-start;
+        }
+
+        .end {
+            align-items: flex-end;
+        }
+
+        .baseline {
+            align-items: baseline;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .central {
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .item {
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Row</h1>
+    <h2>Center</h2>
+    <section class="container center flex">
+        <div class="item">1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+
+    <h2>Stretch</h2>
+    <section class="container center stretch">
+        <div class="item">1</div>
+        <div class="item">Item 2 Lorem Ipsum Lorem Ipsum</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+
+    <h2>Flex-Start</h2>
+    <section class="container center start">
+        <div class="item">1</div>
+        <div class="item">Item 2 Lorem Ipsum Lorem Ipsum</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+
+    <h2>Flex-End</h2>
+    <section class="container center end">
+        <div class="item">1</div>
+        <div class="item">Item 2 Lorem Ipsum Lorem Ipsum</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+
+    <h2>Baseline</h2>
+    <section class="container center baseline">
+        <div class="item">1</div>
+        <div class="item">Item 2 Lorem Ipsum Lorem Ipsum</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+
+    <hr>
+    <h1>Column</h1>
+    <h2>Flex-Start (column)</h2>
+    <section class="container column start">
+        <div class="item">1</div>
+        <div class="item">Item 2 Lorem Ipsum Lorem Ipsum</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+
+    <h2>Flex-End (column)</h2>
+    <section class="container column end">
+        <div class="item">1</div>
+        <div class="item">Item 2 Lorem Ipsum Lorem Ipsum</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+
+    <h2>Center (column)</h2>
+    <section class="container center column">
+        <div class="item">1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+
+    <h2>Baseline (column)</h2>
+    <section class="container baseline column">
+        <div class="item">1</div>
+        <div class="item">Item 2 Lorem Ipsum Lorem Ipsum</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+
+    <h2>Center</h2>
+    <section class="container center central">
+        <div class="item">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac varius ex, vel tincidunt augue.
+        </div>
+    </section>
+
+</body>
+
+</html>

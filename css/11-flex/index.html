@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Fundamentos CSS - Flex</title>
+    <style>
+        .flex-container {
+            max-width: 400px;
+            border: 2px solid black;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            background-color: cornflowerblue;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .largura {
+            width: 200px;
+        }
+
+        .flex-1 {
+            flex: 1;
+            /* grow = 1, shrink = 1, basis = 0 */
+        }
+
+        .flex-2 {
+            flex: 2;
+            /* grow = 2, shrink = 1, basis = 0 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Flex: 1</h2>
+    <section class="flex-container">
+        <div class="item flex-1">Lo</div>
+        <div class="item flex-1">Nu</div>
+        <div class="item flex-1">Nu</div>
+        <div class="item flex-1">Mo</div>
+        <div class="item flex-1">Sr</div>
+    </section>
+    <h2>Flex: 1 e 2</h2>
+    <section class="flex-container">
+        <div class="item flex-1">Lo</div>
+        <div class="item flex-1">Nu</div>
+        <div class="item flex-1">Nu</div>
+        <div class="item flex-1">Mo</div>
+        <div class="item flex-1">Sr</div>
+    </section>
+    <h2>Flex: Variado + Witdh ignorado (basis = 0)</h2>
+    <section class="flex-container">
+        <div class="item flex-1 largura">Lo</div>
+        <div class="item flex-1 largura">Nu</div>
+        <div class="item flex-1 largura">Nu</div>
+        <div class="item flex-1 largura">Mo</div>
+        <div class="item flex-1 largura">Sr</div>
+    </section>
+
+
+</body>
+
+</html>

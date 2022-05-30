@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Fundamentos CSS - Align Content</title>
+    <style>
+        .container {
+            max-width: 400px;
+            height: 350px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            /* margin: 0 auto; */
+        }
+
+        .item {
+            background-color: orangered;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            /* font-size: 16px; */
+            flex: 1;
+            padding: 0 5px;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .flex-start {
+            align-content: flex-start;
+        }
+
+        .flex-end {
+            align-content: flex-end;
+        }
+
+        .space-around {
+            align-content: space-around;
+        }
+
+        .space-between {
+            align-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Stretch</h2>
+    <section class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus accumsan cursus ullamcorper
+        </div>
+        <div class="item">Nulla elementum quis lacus sit amet porttitor. Donec in porta erat, a sodales turpis.</div>
+        <div class="item">Nunc egestas ante fermentum eleifend aliquet</div>
+        <div class="item">n molestie turpis vel nunc suscipit molestie. Morbi laoreet tempus erat sed consequat. </div>
+        <div class="item"> Vestibulum semper imperdiet maximus.</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+    <h2>Center</h2>
+    <section class="container center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus accumsan cursus ullamcorper
+        </div>
+        <div class="item">Nulla elementum quis lacus sit amet porttitor. Donec in porta erat, a sodales turpis.</div>
+        <div class="item">Nunc egestas ante fermentum eleifend aliquet</div>
+        <div class="item">n molestie turpis vel nunc suscipit molestie. Morbi laoreet tempus erat sed consequat. </div>
+        <div class="item"> Vestibulum semper imperdiet maximus.</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+    <h2>Flex Start</h2>
+    <section class="container flex-start">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus accumsan cursus ullamcorper
+        </div>
+        <div class="item">Nulla elementum quis lacus sit amet porttitor. Donec in porta erat, a sodales turpis.</div>
+        <div class="item">Nunc egestas ante fermentum eleifend aliquet</div>
+        <div class="item">n molestie turpis vel nunc suscipit molestie. Morbi laoreet tempus erat sed consequat. </div>
+        <div class="item"> Vestibulum semper imperdiet maximus.</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+    <h2>Flex End</h2>
+    <section class="container flex-end">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus accumsan cursus ullamcorper
+        </div>
+        <div class="item">Nulla elementum quis lacus sit amet porttitor. Donec in porta erat, a sodales turpis.</div>
+        <div class="item">Nunc egestas ante fermentum eleifend aliquet</div>
+        <div class="item">n molestie turpis vel nunc suscipit molestie. Morbi laoreet tempus erat sed consequat. </div>
+        <div class="item"> Vestibulum semper imperdiet maximus.</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+    <h2>Space Around</h2>
+    <section class="container space-around">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus accumsan cursus ullamcorper
+        </div>
+        <div class="item">Nulla elementum quis lacus sit amet porttitor. Donec in porta erat, a sodales turpis.</div>
+        <div class="item">Nunc egestas ante fermentum eleifend aliquet</div>
+        <div class="item">n molestie turpis vel nunc suscipit molestie. Morbi laoreet tempus erat sed consequat. </div>
+        <div class="item"> Vestibulum semper imperdiet maximus.</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+    <h2>Space Between</h2>
+    <section class="container space-between">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus accumsan cursus ullamcorper
+        </div>
+        <div class="item">Nulla elementum quis lacus sit amet porttitor. Donec in porta erat, a sodales turpis.</div>
+        <div class="item">Nunc egestas ante fermentum eleifend aliquet</div>
+        <div class="item">n molestie turpis vel nunc suscipit molestie. Morbi laoreet tempus erat sed consequat. </div>
+        <div class="item"> Vestibulum semper imperdiet maximus.</div>
+        <div class="item">Item 3 Lorem Ipsum</div>
+    </section>
+
+
+</body>
+
+</html>

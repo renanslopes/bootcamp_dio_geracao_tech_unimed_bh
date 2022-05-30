@@ -1,0 +1,250 @@
+:root {
+    --body-bg: #fafafa;
+    --div-bg: #fff;
+    --div_p: #222222;
+    --div_a: #3a91fc;
+    --div-border: #cfcdcd;
+    --input-bg: #fafafa;
+    --input-color: #8e8e8e;
+    --input-border: #dbdbdb;
+    --btn-background: #b2dffc;
+    --facebook-color: #07184e;
+}
+.dark-mode:root{
+    --body-bg: #fafafa;
+    --div-bg: #fff;
+    --div_p: #222222;
+    --div_a: #3a91fc;
+    --div-border: #cfcdcd;
+    --input-bg: #fafafa;
+    --input-color: #8e8e8e;
+    --input-border: #dbdbdb;
+    --btn-background: #b2dffc;
+    --facebook-color: #07184e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    letter-spacing: 0.4px;
+}
+
+* li {
+    list-style: none;
+}
+
+* a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background-color: var(--body-bg);
+}
+
+main {
+    width: 75%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header ul {
+    height: 40px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    line-height: 30px;
+}
+
+header ul li {
+    font-size: 12px;
+    padding: 2px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 60px auto 0 auto;
+}
+
+.main_section {
+    width: 42%;
+}
+
+aside img {
+    width: 100%;
+    margin: auto;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+section form input {
+    width: 70%;
+    height: 30px;
+    margin: 7px auto 0 auto;
+    background-color: var(--input-bg);
+    font-size: 12px;
+    color: var(--input-color);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.section_login {
+    background-color: var(--div-bg);
+    border: 1px solid var(--div-border);
+}
+
+.btn_submit {
+    height: 35px;
+    width: 73%;
+    border: none;
+    background-color: var(--btn-background);
+    color: var(--div-bg);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.logo_instagram {
+    display: block;
+    margin: 40px auto 20px auto;
+}
+
+.form_facebook_login {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+.form_facebook_login a {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.form_facebook_login p {
+    color: var(--input-color);
+    font-size: 14px;
+}
+
+.form_facebook_login figure {
+    width: 16px;
+    margin-right: 10px;
+
+}
+
+.form_facebook_login img {
+    width: 100%;
+
+}
+
+.form_facebook_login_logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 25px auto 0px auto;
+
+}
+
+.form_facebook_login_logo a {
+    color: var(--facebook-color);
+    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-content: center;
+}
+
+.sign_up {
+    background-color: var(--div-bg);
+    margin: 10px auto 20px auto;
+    border: 1px solid var(--div-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign_up p {
+    font-size: 14px;
+    color: var(--div_p);
+    padding: 20px 0 20px 0;
+}
+
+.sign_up p a {
+    color: var(--div_a);
+    font-weight: bold;
+}
+
+.apps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apps p {
+    color: var(--div_p);
+    font-size: 14px;
+}
+
+.app_icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px auto 0 auto;
+}
+
+.app_icons a figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+.app_icons img {
+    width: 34%;
+    margin: auto 5px auto 5px;
+
+}
+
+footer {
+    font-size: 12px;
+    margin: 110px 0 0 0;
+}
+
+footer ul {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto 10px auto;
+    justify-content: center;
+}
+
+footer ul li {
+    color: var(--input-color);
+    margin: 5px 7px;
+}
+
+footer ul li a {
+    color: var(--input-color);
+
+}

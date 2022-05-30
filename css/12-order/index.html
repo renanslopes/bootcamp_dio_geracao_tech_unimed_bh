@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Fundamentos CSS - Order</title>
+    <style>
+        .flex-container {
+            max-width: 400px;
+            border: 2px solid black;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            background-color: cornflowerblue;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            flex: 1;
+        }
+
+        .order1 {
+            order: 1;
+        }
+
+        .order2 {
+            order: 2;
+        }
+
+        .order3 {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Order: 0</h2>
+    <section class="flex-container">
+        <div class="item">Lo</div>
+        <div class="item">Nu</div>
+        <div class="item">Nu</div>
+        <div class="item">Mo</div>
+        <div class="item">Sr</div>
+    </section>
+    <h2>Order: variado</h2>
+    <section class="flex-container">
+        <div class="item">Lo</div>
+        <div class="item order3">Nu</div>
+        <div class="item order3">Nu</div>
+        <div class="item order3">Mo</div>
+        <div class="item order1">Sr</div>
+    </section>
+
+
+
+</body>
+
+</html>

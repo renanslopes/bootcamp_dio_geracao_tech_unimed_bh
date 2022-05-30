@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Fundamentos CSS - Flex-basis</title>
+    <style>
+        .flex-container {
+            max-width: 500px;
+            border: 2px solid black;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            background-color: cadetblue;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .b-auto {
+            flex-basis: auto;
+        }
+
+        .b-0 {
+            flex-basis: 0;
+        }
+
+        .b-w100 {
+            flex-basis: 100px;
+        }
+
+        .fg-1 {
+            flex-grow: 1;
+        }
+
+        .fg-2 {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Flex-basis: auto</h2>
+    <section class="flex-container">
+        <div class="item b-auto fg-1">Lo</div>
+        <div class="item b-auto fg-1">Nu</div>
+        <div class="item b-auto fg-1">Nu</div>
+        <div class="item b-auto fg-2">Mo</div>
+    </section>
+    <h2>Flex-basis: 0</h2>
+    <section class="flex-container">
+        <div class="item b-0 fg-1">Lo</div>
+        <div class="item b-0 fg-1">Nu</div>
+        <div class="item b-0 fg-1">Nu</div>
+        <div class="item b-0 fg-1">Mo</div>
+    </section>
+    <h2>Flex-basis + width</h2>
+    <section class="flex-container">
+        <div class="item b-w100">Lo</div>
+        <div class="item b-w100">Nu</div>
+        <div class="item b-w100">Nu</div>
+        <div class="item b-w100">Mo</div>
+    </section>
+
+
+
+</body>
+
+</html>
