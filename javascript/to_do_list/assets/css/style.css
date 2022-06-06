@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #003B4A;
+}
+
+body {
+    background-color: #74c1c4;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    margin: 50px auto 30px auto;
+    text-decoration: underline;
+    /* padding: 5px; */
+}
+
+.comando_tarefas {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f1f1f1;
+}
+
+#tarefa {
+    width: 40%;
+    height: 30px;
+    margin: 0 10px 0 0;
+    border: 1px solid #4b7b86;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f1f1f1;
+    color: #4b7b86;
+}
+
+
+.adicionar_tarefa {
+    width: 80px;
+    height: 42px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    color: #4b7b86;
+    background-color: #74c1c4;
+    padding: 5px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.adicionar_tarefa:hover {
+    border: none;
+    background-color: #a3dfec;
+    cursor: pointer;
+    color: #003B4A;
+}
+
+.wrapper_tarefa {
+    width: 90%;
+    margin: 20px auto 0 auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f1f1f1;
+}
+
+.wrapper_tarefa input {
+    margin-right: 10px;
+    border: none;
+    order: 1;
+}
+
+.wrapper_tarefa_li {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 10px auto;
+    justify-content: space-between;
+}
+
+.wrapper_tarefa_p {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    order: 2;
+}
+
+.wrapper_tarefa_p_completa {
+    text-decoration: line-through;
+}
+
+
+.task_ico_delete {
+    width: 13px;
+    order: 3;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#limpar_lista {
+    width: 100px;
+    background-color: #c96e6e;
+    color: #74c1c4;
+    margin: 20px auto 0 auto;
+    display: none;
+
+}
+
+#limpar_lista:hover {
+    background-color: #f79595;
+    color: #4b7b86;
+    border: none;
+
+}
